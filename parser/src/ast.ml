@@ -6,7 +6,6 @@ type const =
 type pattern =
   | PVar of string
   | PConst of const
-  | PWildcard
 
 type expr =
   | Var of string
@@ -25,7 +24,6 @@ type expr =
 let pattern_to_string = function
   | PVar v -> v
   | PConst c -> const_to_string c
-  | PWildcard -> "_"
 
 let indent_lines n s =
   s

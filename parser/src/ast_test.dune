@@ -1,0 +1,12 @@
+(library
+ (name ast_test)
+ (modules ast_test)
+ (libraries str)
+ (preprocess (pps ppx_deriving.show))
+)
+
+(executable
+ (name ast_test)
+ (modules ast_test)
+ (libraries ast)
+)

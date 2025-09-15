@@ -30,3 +30,11 @@ To run the parser (after building):
 dune exec src/main.exe
 ```
 
+## Running Tests
+
+To run the tests:
+
+```sh
+dune exec src/ast_test.exe
+```
+

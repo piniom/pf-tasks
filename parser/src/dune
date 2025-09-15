@@ -1,4 +1,21 @@
+
+
+(library
+    (name parser_lib)
+    (modules ast token lexer parser)
+)
+
+
 (executable
     (name main)
-    (modules ast token lexer parser main)
+    (modules main)
+    (libraries parser_lib)
+)
+
+
+
+(executable
+    (name ast_test)
+    (modules ast_test)
+    (libraries parser_lib)
 )

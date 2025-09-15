@@ -1,9 +1,9 @@
-open Lexer
-open Parser
-open Ast
+open Parser_lib.Lexer
+open Parser_lib.Parser
+open Parser_lib.Ast
 
 let tokens_to_string tokens =
-  tokens |> List.map Token.to_string |> String.concat " "
+  tokens |> List.map Parser_lib.Token.to_string |> String.concat " "
 
 let () =
   let input = "(match x with | 0 -> \"zero\" | 1 -> let x = 3 in x (y z) | n -> n ) a" in
