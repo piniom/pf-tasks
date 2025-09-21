@@ -1,6 +1,11 @@
 (executable
-    (name main)
-    (modules main)
+    (name ski)
+    (modules ski)
+)
+
+(executable
+    (name lambda)
+    (modules lambda)
 )
 
 

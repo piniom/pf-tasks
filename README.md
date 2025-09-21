@@ -7,4 +7,4 @@
 
 ### 21 IX
 
-- evaluator
+- evaluator (originally for SKI - added lambda terms at 01:00am on 22 IX)
